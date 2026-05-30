@@ -13,4 +13,5 @@ jobs:
       - name: Push to hub
         env:
           HF_TOKEN: ${{ secrets.HF_TOKEN }}
-        run: git push --force https://medpack2:$HF_TOKEN@huggingface.co/spaces/medpack2/simple-devops-project main
+        # هنا نخبر خادم GitHub أن يرسل الكود مباشرة إلى حسابك ezzitia على Hugging Face
+        run: git push --force https://ezzitia:$HF_TOKEN@huggingface.co/spaces/ezzitia/simple-devops-project main
